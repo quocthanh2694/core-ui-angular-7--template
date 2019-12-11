@@ -1,0 +1,13 @@
+// Here you can add other styles
+// ::ng-deep button[appasidemenutoggler] {
+//     display: none !important;
+// }
+
+.toast-container {
+    width: 300px;
+    pointer-events: initial !important;
+}
+
+.toast-info {
+    background-image: none;
+}
