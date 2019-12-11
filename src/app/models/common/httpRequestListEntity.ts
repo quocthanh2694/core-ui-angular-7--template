@@ -1,4 +1,3 @@
-import { Paging } from '../entity/paging';
 
 
 export class HttpRequestListCommon {
@@ -10,7 +9,7 @@ export class HttpRequestListCommon {
 
 class Data {
     items: any;
-    paging: Paging;
+    // paging: Paging;
 };
 
 
