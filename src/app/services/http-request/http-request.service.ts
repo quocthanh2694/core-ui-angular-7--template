@@ -13,7 +13,7 @@ export class HttpRequestService {
   }
 
   getJsonDemo() {
-    return this.http.get('https://www.w3schools.com/angular/customers.php');
+    return this.http.get('https://gorest.co.in/public-api/users?_format=json&access-token=KyJeH2G2nlZGHOo9te45s1hmSHBnk2aDCWWw');
   }
 
   login(data) {

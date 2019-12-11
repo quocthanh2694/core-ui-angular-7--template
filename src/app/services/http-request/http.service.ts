@@ -114,14 +114,14 @@ export class HttpService {
           this.translateService.get('can_not_connect_to_server').subscribe(res => {
             txt_1 = res;
           });
-          self.myToastrService.showToastrError(txt_1);
+          self.myToastrService.error(txt_1);
           break;
         case 404:
           let txt = '';
           this.translateService.get('not_found').subscribe(res => {
             txt = res;
           });
-          self.myToastrService.showToastrError(txt);
+          self.myToastrService.error(txt);
           break;
         default:
           break;
@@ -137,7 +137,7 @@ export class HttpService {
     return (res) => {
       switch (res.status_code) {
         case 910: // your account is not have permission
-          // self.myToastrService.showToastrError('Tài khoản của bạn không có quyền truy cập.');
+          // self.myToastrService.showToastrError('Permission denied.');
           self.router.navigateByUrl('login');
           break;
       }

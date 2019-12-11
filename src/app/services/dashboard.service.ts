@@ -8,14 +8,14 @@ export class DashboardService {
 
     constructor(private httpRequestService: HttpRequestService) { }
 
-    async countOrderTime(params) {
+    async getJsonDemo() {
 
         const data: any = await this.httpRequestService.getJsonDemo().toPromise();
         const res: HttpRequestListCommon = data;
 
-        if (res.status_code !== STATUS_CODE.SUCCESS) {
-            throw new Error(res.status_message);
-        }
+        // if (res.status_code !== STATUS_CODE.SUCCESS) {
+        //     throw new Error(res.status_message);
+        // }
 
         return res;
     }

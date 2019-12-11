@@ -46,6 +46,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AlertService } from './services/alert/alert.service';
 import { ToastrService, ToastrModule } from 'ngx-toastr';
 import { GlobalEventService } from './utilities/globalEvent.service';
+import { HttpRequestService } from './services/http-request/http-request.service';
+import { HttpService } from './services/http-request/http.service';
+import { LocalStorageService } from './utilities/localStorage.service';
+import { HttpModule } from '@angular/http';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -56,6 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    HttpModule,
     AppRoutingModule,
     AppAsideModule,
     AppBreadcrumbModule.forRoot(),
@@ -90,6 +95,9 @@ export function HttpLoaderFactory(http: HttpClient) {
     ToastrService,
     AlertService,
     GlobalEventService,
+    HttpService,
+    HttpRequestService,
+    LocalStorageService,
   ],
   exports: [
     TranslateModule
