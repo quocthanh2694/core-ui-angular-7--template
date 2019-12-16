@@ -49,6 +49,7 @@ import { HttpService } from './services/http-request/http.service';
 import { LocalStorageService } from './utilities/localStorage.service';
 import { HttpModule } from '@angular/http';
 import { AppService } from './services/app.service';
+import { ApiHelperService } from './services/apiHelper.service';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http);
@@ -97,6 +98,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     HttpRequestService,
     LocalStorageService,
     AppService,
+    ApiHelperService,
   ],
   exports: [
     TranslateModule

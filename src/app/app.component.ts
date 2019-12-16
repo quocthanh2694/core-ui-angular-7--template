@@ -27,7 +27,7 @@ export class AppComponent implements OnInit {
   ) { }
 
   ngOnInit() {
-    this.translateService.setDefaultLang('en');
+    this.translateService.setDefaultLang('vi');
     this.router.events.subscribe((evt) => {
       if (!(evt instanceof NavigationEnd)) {
         return;
@@ -38,7 +38,7 @@ export class AppComponent implements OnInit {
 
     // loading
     this.appService.loadingEventEmitter.subscribe((show: boolean) => {
-      this.loading = true;
+      this.loading = show;
     });
   }
 }

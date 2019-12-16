@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpService } from './http.service';
 import { Http } from '@angular/http';
+import { environment } from '../../../environments/environment';
 
 @Injectable()
 export class HttpRequestService {
@@ -17,7 +18,7 @@ export class HttpRequestService {
   }
 
   login(data) {
-    return this.http.post('auth/account/login', data);
+    return this.http.post('/auth/account/login', data);
   }
 
 }

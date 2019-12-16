@@ -1,3 +1,16 @@
 {
-    "dashboard": "Dashboard"
+    "dashboard": "Dashboard",
+    "login": "Đăng nhập",
+    "sign_to_your_account": "Đăng nhập vào tài khoản của bạn",
+    "username": "Tài khoản",
+    "password": "Mật khẩu",
+    "forgot_password": "Quên mật khẩu?",
+    "register": "Đăng ký",
+    "required": "Bắt buộc",
+    "created_success": "Tạo thành công",
+    "edited_success": "Sửa thành công",
+    "deleted_success": "Xóa thành công",
+    "an_error_occur": "Đã có lỗi xảy ra",
+    "data_was_existed": "Dữ liệu đã tồn tại",
+    "success": "Thành công"
 }

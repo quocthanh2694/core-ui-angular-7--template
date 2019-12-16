@@ -6,6 +6,7 @@ import { GlobalEventService } from '../../utilities/globalEvent.service';
 @Injectable()
 export class AlertService {
 
+  msgSuccess;
   msgCreated;
   msgEdited;
   msgDeleted;
@@ -40,8 +41,10 @@ export class AlertService {
       'fail_save_blockchain',
       'an_error_occur',
       'data_was_existed',
+      'success',
     ]).subscribe((trans) => {
       this.msgCreated = trans['created_success'];
+      this.msgSuccess = trans['success'];
       this.msgEdited = trans['edited_success'];
       this.msgDeleted = trans['deleted_success'];
       this.msgSavedBlockchain = trans['save_blockchain_success'];
@@ -51,7 +54,7 @@ export class AlertService {
     });
   }
 
-  success(msg, title, duration?) {
+  success(msg, title?, duration?) {
     this.toastrService.info('<span class="now-ui-icons ui-1_bell-53"></span><span>' + msg + '</span>', title, {
       timeOut: duration || 3000,
       closeButton: true,
