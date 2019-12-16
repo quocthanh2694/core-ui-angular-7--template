@@ -60,6 +60,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     BrowserAnimationsModule,
     HttpClientModule,
+    // tslint:disable-next-line: deprecation
     HttpModule,
     AppRoutingModule,
     AppAsideModule,
