@@ -3,7 +3,7 @@ import { URI } from '../../../uri';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-dashboard',
+  selector: 'app-login',
   templateUrl: './login.component.html'
 })
 export class LoginComponent {
