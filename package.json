@@ -45,7 +45,7 @@
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "bootstrap": "^4.3.1",
-    "chart.js": "^2.9.2",
+    "chart.js": "^2.9.4",
     "core-js": "^2.6.10",
     "flag-icon-css": "^3.4.5",
     "font-awesome": "^4.7.0",
